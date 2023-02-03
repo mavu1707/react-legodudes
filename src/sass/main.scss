@@ -24,10 +24,14 @@ body{
   font-family: $rubik;
 }
 
-.App{
-  background-color: $legoWhite;
-  max-width: $maxW;
+@mixin default-main($background-color, $max-w){
+  background-color: $background-color;
+  max-width: $max-w;
   width: 100%;
+}
+
+main{
+  @include default-main($legoWhite, $maxW)
 }
 
 @mixin default-box($box-color, $max-w, $bk-color, $box-rem){
