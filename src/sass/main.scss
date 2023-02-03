@@ -14,12 +14,16 @@
 
 //Sass filer
 @import "colors";
-@import "backgroundImg";
+@import "image";
 @import "font";
 
 body{
   background-color: $yellow;
   background-image: $backgroundImg;
   font-family: $rubik;
-  max-width: 1200px;
+}
+
+.App{
+  background-color: $white;
+  max-width: 1000px;
 }

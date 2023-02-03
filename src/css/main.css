@@ -2108,7 +2108,11 @@ body {
   background-color: #ffd700;
   background-image: url(/src/img/mainbackground.png);
   font-family: "Rubik", sans-serif;
-  max-width: 1200px;
+}
+
+.App {
+  background-color: #fff;
+  max-width: 1000px;
 }
 
 /*# sourceMappingURL=main.css.map */
