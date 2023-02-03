@@ -16,14 +16,33 @@
 @import "colors";
 @import "image";
 @import "font";
+@import "size";
 
 body{
-  background-color: $yellow;
+  background-color: $legoYellow;
   background-image: $backgroundImg;
   font-family: $rubik;
 }
 
 .App{
-  background-color: $white;
-  max-width: 1000px;
+  background-color: $legoWhite;
+  max-width: $maxW;
+  width: 100%;
+}
+
+@mixin default-box($box-color, $max-w, $bk-color, $box-rem){
+  color: $box-color;
+  max-width: $max-w;
+  width: 100%;
+  background-color: $bk-color;
+  padding: $box-rem;
+}
+
+.product-card{
+  @include default-box($legoWhite, 300px, $legoBlack, 1rem);
+
+  .shop-btn{
+    background-color: $legoGreen;
+    color: $legoWhite;
+  }
 }

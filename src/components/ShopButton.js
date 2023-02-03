@@ -3,5 +3,5 @@ export default function ShopButton(){
     console.log("Du har handlet");
   }
 
-  return <button onClick={shopButton}>Legg i handlekurv</button>
+  return <button className="shop-btn" onClick={shopButton}>Legg i handlekurv</button>
 }

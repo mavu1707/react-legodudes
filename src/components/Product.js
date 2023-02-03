@@ -5,7 +5,7 @@ import ShopButton from "./ShopButton";
 
 export default function Product(){
   return (
-    <article>
+    <article className="product-card">
       <ProductTitle name ="Dragon Zane"/>
       <ProductCategory category="Ninjago"/>
       <ProductPrice price="99 kr"/>
