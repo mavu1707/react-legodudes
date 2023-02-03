@@ -33,6 +33,7 @@ body{
 main{
   @include default-main($legoWhite, $maxW);
   margin: 0 auto;
+  padding-top: 1rem;
 }
 
 @mixin default-box($box-color, $max-w, $bk-color, $box-rem){
