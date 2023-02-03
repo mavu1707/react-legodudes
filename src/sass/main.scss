@@ -12,6 +12,14 @@
 @import "../../node_modules/bootstrap/scss/grid";
 @import "../../node_modules/bootstrap/scss/helpers";
 
+//Sass filer
+@import "colors";
+@import "backgroundImg";
+@import "font";
+
 body{
-  background-color: blue;
+  background-color: $yellow;
+  background-image: $backgroundImg;
+  font-family: $rubik;
+  max-width: 1200px;
 }
