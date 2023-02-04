@@ -24,6 +24,15 @@ body{
   font-family: $rubik;
 }
 
+div .App{
+  width: 100%;
+  max-width: $maxW;
+  margin: 0 auto;
+  background-color: $legoWhite;
+  overflow: hidden;
+  position: relative;
+}
+
 header{
   display: flex;
   justify-content: space-between;
@@ -38,7 +47,6 @@ header{
     width: 100%;
     max-width: 60px;
   }
-  
 }
 
 @mixin default-nav($bakground-color, $color){
@@ -61,7 +69,9 @@ nav{
 h2{
   text-transform: uppercase;
   width: 100%;
-  padding: 2rem;
+  display: block;
+  text-align: center;
+  font-weight: bold;
 }
 
 @mixin default-main($background-color, $max-w){
@@ -74,6 +84,9 @@ main{
   @include default-main($legoWhite, $maxW);
   margin: 0 auto;
   padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @mixin default-box($box-color, $max-w, $bk-color, $box-rem){
@@ -86,13 +99,25 @@ main{
 
 .product-card{
   @include default-box($legoWhite, 300px, $legoBlack, 1rem);
+  overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  margin: 1rem;
+
+  > *{
+    display: block;
+    clear: both;
+  }
 
   h3{
     text-transform: uppercase;
+    font-weight: 600;
   }
 
   .shop-btn{
     background-color: $legoGreen;
     color: $legoWhite;
+    width: 100%;
   }
 }

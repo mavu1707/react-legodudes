@@ -16,7 +16,7 @@ import {ReactComponent as Cart} from './img/legocart.svg';
 export default function App() {
   return (
     <div className="App">
-      <main>
+    
         {/*Header*/}
         <header>
           <Logo className='logo'/>
@@ -31,20 +31,22 @@ export default function App() {
             />
           ))}
         </nav>
-          
-        <h2>Ninjago</h2>
 
-        {/*Product card*/}
-        {data.map((product) => (
-          <ProductCard
-            key={product.proid}
-            name={product.title}
-            price={product.price}
-            cat={product.category}
-          />
-        ))}
+        {/*Artikkel produktene*/}
+        <main>
+
+          <h2>Ninjago</h2>
+
+          {/*Product card*/}
+          {data.map((product) => (
+            <ProductCard
+              key={product.proid}
+              name={product.title}
+              price={product.price}
+              cat={product.category}
+            />
+          ))}
       </main>
     </div>
-
   )
 }
