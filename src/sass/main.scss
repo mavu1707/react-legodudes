@@ -49,6 +49,20 @@ header{
   }
 }
 
+.label{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  color: $legoWhite;
+  background-color: $legoRed;
+  position: absolute;
+  top: 0.3rem;
+  left: 69rem;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+
 @mixin default-nav($bakground-color, $color){
   background-color: $bakground-color;
   color: $color;
@@ -88,6 +102,8 @@ main{
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+
 
 @mixin default-box($box-color, $max-w, $bk-color, $box-rem){
   color: $box-color;

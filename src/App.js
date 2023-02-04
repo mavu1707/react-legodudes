@@ -21,6 +21,7 @@ export default function App() {
         <header>
           <Logo className='logo'/>
           <Cart className='cart'/>
+          <span className='label'>0</span>
         </header>
 
         {/*Nav Bar*/}

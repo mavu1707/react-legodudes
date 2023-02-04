@@ -2133,6 +2133,20 @@ header .cart {
   max-width: 60px;
 }
 
+.label {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #da291c;
+  position: absolute;
+  top: 0.3rem;
+  left: 69rem;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+
 nav {
   background-color: #da291c;
   color: #fff;
