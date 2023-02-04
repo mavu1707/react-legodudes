@@ -1,7 +1,8 @@
 import './App.css';
-import Product from "./components/ArticleCard/Product";
 import './css/main.css';
-import data from "./components/ArticleCard/products.json";
+import ProductCard from './components/ProductCard/ProductCard';
+import data from './components/ProductCard/products.json';
+
 
 //npm start
 //npm run css:watch
@@ -11,15 +12,16 @@ export default function App() {
   return (
     <div className="App">
       <main>
-        {data.map((product) =>(
-          <Product
+      {data.map((product) => (
+        <ProductCard
           key={product.proid}
           name={product.title}
           price={product.price}
           cat={product.category}
         />
-        ))}
-      </main>
-    </div>
-  );
+      ))}
+    </main>
+  </div>
+
+  )
 }

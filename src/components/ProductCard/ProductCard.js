@@ -1,15 +1,15 @@
 import ProductCategory from "./ProductCategory";
+import ProductName from "./ProductName";
 import ProductPrice from "./ProductPrice";
-import ProductTitle from "./ProductTitle";
-import ShopButton from "./ShopButton";
+import ProductButton from "./ProductButton";
 
-export default function Product({name, price, cat}){
+export default function ProductCard({ name, price, cat }) {
   return (
     <article className="product-card">
       <ProductCategory cat={cat} />
-      <ProductTitle name={name} />
+      <ProductName name={name} />
       <ProductPrice price={price} />
-      <ShopButton />
+      <ProductButton />
     </article>
-  )
+  );
 }
