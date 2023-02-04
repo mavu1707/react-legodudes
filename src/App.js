@@ -11,6 +11,9 @@ import data from './components/ProductCard/products.json';
 export default function App() {
   return (
     <div className="App">
+      <nav>
+        
+      </nav>
       <main>
       {data.map((product) => (
         <ProductCard
