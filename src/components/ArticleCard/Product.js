@@ -3,13 +3,13 @@ import ProductPrice from "./ProductPrice";
 import ProductTitle from "./ProductTitle";
 import ShopButton from "./ShopButton";
 
-export default function Product(){
+export default function Product({name, price, cat}){
   return (
     <article className="product-card">
-      <ProductTitle name ="Dragon Zane"/>
-      <ProductCategory category="Ninjago"/>
-      <ProductPrice price="99 kr"/>
+      <ProductCategory cat={cat} />
+      <ProductTitle name={name} />
+      <ProductPrice price={price} />
       <ShopButton />
-     </article>
+    </article>
   )
 }
