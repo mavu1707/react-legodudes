@@ -24,6 +24,46 @@ body{
   font-family: $rubik;
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  .logo{
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .cart{
+    width: 100%;
+    max-width: 60px;
+  }
+  
+}
+
+@mixin default-nav($bakground-color, $color){
+  background-color: $bakground-color;
+  color: $color;
+}
+
+nav{
+  @include default-nav($legoRed, $legoWhite);
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+
+  a{
+    padding: .5rem 1rem;
+    border-bottom: 5px solid $legoRed;
+  }
+}
+
+h2{
+  text-transform: uppercase;
+  width: 100%;
+  padding: 2rem;
+}
+
 @mixin default-main($background-color, $max-w){
   background-color: $background-color;
   max-width: $max-w;
@@ -46,6 +86,10 @@ main{
 
 .product-card{
   @include default-box($legoWhite, 300px, $legoBlack, 1rem);
+
+  h3{
+    text-transform: uppercase;
+  }
 
   .shop-btn{
     background-color: $legoGreen;
