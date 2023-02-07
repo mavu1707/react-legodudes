@@ -1,3 +1,3 @@
 export default function ProductCategory({cat}){
-  return <span>{cat}</span>;
+  return <span className="category">{cat}</span>;
 }

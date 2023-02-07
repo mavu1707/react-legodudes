@@ -41,7 +41,7 @@ export default function App() {
           {/*Product card*/}
           {data.map((product) => (
             <ProductCard
-              key={product.proid}
+              key={product.prodid}
               name={product.title}
               price={product.price}
               cat={product.category}

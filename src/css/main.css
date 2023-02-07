@@ -2198,6 +2198,9 @@ main {
   text-transform: uppercase;
   font-weight: 600;
 }
+.product-card .category {
+  color: #ffd700;
+}
 .product-card .shop-btn {
   background-color: #00af4d;
   color: #fff;
